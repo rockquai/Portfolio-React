@@ -1,0 +1,39 @@
+@import 'index'
+
+.modal__wrapper
+  +fixed (top 50% left 50%)
+  transform: translate(-50%, -50%)
+  width: 50%
+  height: 50%
+  z-index: 200
+  +media("<=huge-1366")
+    width: 90%
+
+  .modal__input
+    background: 0 0
+    border: none
+    border:
+      bottom: 3px solid rgba(255,255,255,0.2)
+    +font-size(65px)
+    color: #fff
+    padding:
+      left: rem(20px)
+      right: rem(100px)
+    outline: none
+    &:focus
+      outline: none
+    +media("<=huge-1366")
+      width: 90%
+
+  .modal__button--search
+    cursor: pointer
+    +absolute(top rem(-9px) right rem(-7px))
+    width: rem(75px)
+    height: rem(75px)
+  
+  .modal__close
+    cursor: pointer
+    +absolute(top 50% left 50%)
+    transform: translate(-50%, -50%)
+    .modal__button--close
+      width: 130%

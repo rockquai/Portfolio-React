@@ -1,0 +1,83 @@
+@import 'index'
+
+.main-carousel__button-group
+  .main-carousel__button
+    @extend %reset-button
+    cursor: pointer
+    opacity: 0.6
+    +absolute(top 40%)
+    width: rem(30px)
+    height: rem(54px)
+    transform: translateY(-50%)
+    z-index: 1000
+    &:hover
+      opacity: 1
+    &:focus
+      @extend %focus-state
+    &::before
+      content: ''
+      +absolute
+      width: 30px
+      height: 30px
+    +media("<=large-1024")
+      &::before
+        width: rem(26px)
+        height: rem(26px)
+    +media("<=medium-960")
+      top: 45%
+    +media("<=medium-768")
+      top: 50%
+      &::before
+        width: rem(20px)
+        height: rem(20px)
+    +media("<=small-480")
+      top: 56%
+    +media("<=small-376")
+      &::before
+        width: rem(16px)
+        height: rem(16px) 
+    
+  .main-carousel__button--title
+    @extend %a11y-hidden
+    
+  .main-carousel__button--prev
+    left: rem(30px)
+    &::before
+      top: 10px
+      left: 10px
+      transform: rotate(-45deg)
+      border:
+        top: 5px solid $color-777777
+        left: 5px solid $color-777777
+    +media("<=medium-768")
+      &::before
+        left: 0
+    +media("<=small-600")
+      &::before
+        left: 0
+    +media("<=small-376")
+      &::before
+        left: 0
+
+  .main-carousel__button--next
+    right: rem(30px)
+    &::before
+      top: 10px
+      right: 10px
+      transform: rotate(45deg)
+      border:
+        top: 5px solid $color-777777
+        right: 5px solid $color-777777
+    +media("<=medium-768")
+      &::before
+        right: 0
+    +media("<=small-600")
+      &::before
+        right: 0
+    +media("<=small-376")
+      &::before
+        right: 0
+
+
+
+

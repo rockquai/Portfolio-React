@@ -1,0 +1,70 @@
+@import 'index'
+
+.main-collection
+  +relative
+  width: rem(1540px)
+  height: 0
+  padding:
+    bottom: rem(582px)
+  margin:
+    left: auto
+    right: auto
+  +media("<=huge-1366")
+    width: rem(1180px)
+    padding:
+      bottom: rem(484px)
+  +media("<=huge-1280")
+    width: rem(1000px)
+    padding:
+      bottom: rem(418px)
+  +media("<=large-1024")
+    width: rem(940px)
+    padding:
+      bottom: rem(390px)
+  +media("<=medium-960")
+    width: rem(760px)
+    padding:
+      bottom: rem(361px)
+  +media("<=medium-768")
+    width: rem(640px)
+    padding:
+      bottom: rem(791px)
+  +media("<=small-600")
+    width: rem(500px)
+    padding:
+      bottom: rem(704px)
+  +media("<=small-480")
+    width: rem(380px)
+    padding:
+      bottom: rem(593px)
+  +media("<=small-376")
+    width: 100%
+
+.main-collection__tablist-wrapper
+  +absolute(top rem(-76px))
+  width: 100%
+  +media("<=large-1024")
+    top: rem(-62px)
+  +media("<=medium-960")
+    top: rem(-62px)
+  +media("<=medium-768")
+    top: rem(41px)
+  +media("<=small-480")
+    top: rem(24px)
+  .main-collection__tablist
+    width: 100%
+    @extend %clearfix
+    +media("<=medium-960")
+      &::before
+        width: 0
+    +media("<=medium-768")
+      &::before
+        width: 0
+        height: 0
+        background: none
+.main-collection__contents-wrapper
+  +absolute(top 0 left 0)
+  width: 100%
+  height: rem(406px)
+  +media("<=medium-768")
+    top: rem(91px)

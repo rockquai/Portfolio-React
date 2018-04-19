@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Styleguides---Source-Sans-Pro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S1---Styleguide" transform="translate(-1311.000000, -2316.000000)" fill="#c21333">
+            <g id="05---Forms" transform="translate(259.000000, 2214.000000)">
+                <g id="Content" transform="translate(0.000000, 66.000000)">
+                    <g id="Input-4" transform="translate(835.000000, 0.000000)">
+                        <g id="Input" transform="translate(1.000000, 27.000000)">
+                            <path d="M228.7,21.696 C228.313,22.083 227.684,22.083 227.297,21.696 L224.989,19.388 L222.676,21.7 C222.289,22.088 221.66,22.088 221.273,21.7 C220.885,21.313 220.885,20.685 221.273,20.297 L223.585,17.984 L221.273,15.672 C220.885,15.284 220.885,14.656 221.273,14.269 C221.66,13.881 222.289,13.881 222.676,14.269 L224.989,16.581 L227.297,14.273 C227.684,13.885 228.312,13.885 228.7,14.273 C229.087,14.661 229.087,15.289 228.7,15.676 L226.392,17.985 L228.7,20.293 C229.088,20.68 229.088,21.309 228.7,21.696 M225,9 C220.029,9 216,13.029 216,18 C216,22.971 220.029,27 225,27 C229.97,27 234,22.971 234,18 C234,13.029 229.97,9 225,9" id="Cross"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,108 @@
+@import 'index'
+
+.header-nav
+  flex-grow: 6
+  margin:
+    left: rem(200px)
+    top: rem(46px)
+  .header-nav__title
+    @extend %a11y-hidden
+  .header-nav__link
+    display: inline-block
+    margin:
+      right: rem(50px)
+    +font-size(16px)
+    color: $color-929292
+    +media("<=huge-1280")
+      margin:
+        right: rem(30px)
+    &.header-nav__link--active
+      font-weight: 700
+      color: $omega-keycolor
+  +media("<=huge-1280")
+    margin:
+      left: rem(91px)
+  +media("<=large-1024")
+    display: none
+
+.header-nav__rwd
+  display: none
+  +media("<=large-1024")
+    display: block
+    margin:
+      top: rem(35px)
+      left: rem(10px)
+  .header-nav__title
+    @extend %a11y-hidden
+  .header-nav__rwd--menu
+    +relative
+    width: rem(40px)
+    height: rem(30px)
+    cursor: pointer
+    z-index: 1000
+    .header-nav__rwd--menu-bar
+      +absolute(top 0 left 0)
+      width: 100%
+      height: rem(5px)
+      vertical-align: middle
+      padding: 0px
+      background: $color-929292
+      opacity: 1
+      transform: rotate(0deg)
+      transition: 0.25s ease-in-out
+    .header-nav__rwd--menu-bar:nth-child(1)
+      top: 0
+    .header-nav__rwd--menu-bar:nth-child(2),
+    .header-nav__rwd--menu-bar:nth-child(3)
+      top: 10px
+    .header-nav__rwd--menu-bar:nth-child(4)
+      top: 20px
+    &.isopen
+      .header-nav__rwd--menu-bar:nth-child(1)
+        top: 18px
+        width: 0%
+        left: 50%
+        opacity: 0
+      .header-nav__rwd--menu-bar:nth-child(2)
+        transform: rotate(45deg)
+        background: $omega-keycolor
+      .header-nav__rwd--menu-bar:nth-child(3)
+        transform: rotate(-45deg)
+        background: $omega-keycolor
+      .header-nav__rwd--menu-bar:nth-child(4)
+        top: 18px
+        width: 0%
+        left: 50%
+        opacity: 0
+
+  .header-nav__rwd--menu-wrapper
+    +fixed(top rem(90px) left 0)
+    width: 100%
+    background-color: $white
+    transform: translateY(-150%)
+    // transform: translateY(0%)
+    transition: transform 500ms
+    z-index: 1002
+    .header-nav__rwd--menu-list
+      margin-top: 0px
+      padding: 0px
+      color: black
+      text-align: center
+      .header-nav__rwd--menu-list--item
+        padding:
+          top: rem(30px)
+          bottom: rem(20px)
+          left: rem(20px)
+        border:
+          bottom: 1px solid rgba($color-e2e2e2, 0.5)
+        @extend %reset-list
+        .header-nav__rwd--menu-list--link
+          +font-size(20px)
+          color: $color-929292
+          &:hover
+            color: $omega-keycolor
+      .header-nav__rwd--menu-list--item:last-child
+        // border-bottom: none
+
+    &.isopen
+      transform: none

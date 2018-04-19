@@ -1,0 +1,18 @@
+@import 'index'
+
+.common.responsive
+  width: rem(1280px)
+  +media("<=huge-1920")
+  +media("<=huge-1366")
+  +media("<=huge-1280")
+    width: rem(1020px)
+  +media("<=large-1024")
+    width: rem(960px)
+  +media("<=medium-960")
+    width: rem(780px)
+  +media("<=medium-768")
+    width: rem(660px)
+  +media("<=small-600")
+    width: 100%
+  +media("<=small-480")
+  +media("<=small-376")

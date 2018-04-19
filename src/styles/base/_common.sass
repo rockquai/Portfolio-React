@@ -1,0 +1,68 @@
+//@_common.sass
+	
+// clearfix 
+%clearfix
+	content: ''
+	display: block
+	clear: both
+
+// clearfix - Micro : 오페라 버그 해결
+%micro-clearfix
+	&:before,
+	&:after
+		content: ''
+		display: table
+	&:after
+		clear: both
+
+// images Replacement 모듈
+%ir
+	overflow: hidden
+	display: block
+	text-indent: -99999em
+
+// Accessibility-hidden모듈
+%a11y-hidden
+	position: absolute
+	overflow: hidden
+	clip: rect(0 0 0 0) //css2, IE6·7 고려. 
+	clip: rect(0,0,0,0) //css3
+	width: 1px 
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+
+	&.focusable:focus
+		overflow: hidden
+		position: static
+		clip: auto
+		clip: auto
+		width: auto
+		height: auto
+		margin: 0
+
+%border-box
+	box-sizing: border-box
+
+%reset-list
+	margin: 0
+	padding: 0
+	list-style: none
+
+%remove-img-space
+	vertical-align: bottom
+
+%reset-button
+  border: none
+  padding: 0
+  background: transparent
+
+.a11y-hidden
+	@extend %a11y-hidden
+
+%focus-state
+  outline: none
+  outline-offset: 10px
+  box-shadow: 0 0 0 4px rgba(#5aceff, 0.45)
+  border-radius: 2px

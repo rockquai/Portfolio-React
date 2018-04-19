@@ -1,0 +1,22 @@
+[
+  {
+    "id" : 1,
+    "menu" : "TERMS OF UES",
+    "url" : "#"
+  },
+  {
+    "id" : 2,
+    "menu" : "PRIVACY POLICY",
+    "url" : "#"
+  },
+  {
+    "id" : 3,
+    "menu" : "NEWS",
+    "url" : "#"
+  },
+  {
+    "id" : 4,
+    "menu" : "FAQ",
+    "url" : "#"
+  }
+]

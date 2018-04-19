@@ -1,0 +1,99 @@
+@import 'index'
+
+.footer-info
+  width: 100%
+  height: 100%
+  background: #eee
+  .footer-info__wrapper
+    width: rem(1540px)
+    margin:
+      top: rem(48px)
+      left: auto
+      right: auto
+      bottom: rem(40px)
+    &::after
+      @extend %clearfix
+    +media("<=huge-1366")
+      width: 100%
+    +media("<=medium-768")
+      padding:
+        top: rem(20px)
+   
+    .footer-info__title
+      @extend %a11y-hidden
+    
+    .footer-info__menu-wrapper
+      float: left
+      margin:
+        top: rem(24px)
+        left: rem(20px)
+        bottom: rem(24px)
+      +media("<=medium-768")
+        float: none
+      .footer-info__menu
+        overflow: hidden
+        .footer-info__menu--list
+          +relative
+          float: left
+          margin:
+            top: rem(4px)
+            left: rem(20px)
+          @extend %reset-list
+          &::after
+            +absolute(top rem(6px) right rem(-10px))
+            content: ''
+            width: rem(1px)
+            height: rem(9px)
+            background: $color-777777
+          .footer-info__menu--link
+            display: block
+            +font-size(12px)
+            color: $color-777777
+          &:nth-child(1)
+            margin:
+              left: rem(10px)
+          &:nth-child(2)
+            a
+              font-weight: 700
+              color: $omega-keycolor
+
+      .footer-info__copyright
+        margin:
+          top: rem(5px)
+          left: rem(10px)
+        +font-size(12px)
+        color: $color-777777
+
+    .footer-info__sns-wrapper
+      float: right
+      margin:
+        top: rem(33px)
+        right: rem(20px)
+      +media("<=medium-768")
+        float: none
+        margin:
+          top: rem(20px)
+          left: rem(24px)
+          right: 0
+      .footer-info__sns
+        @extend %clearfix
+        .footer-info__sns--list
+          float: left
+          margin:
+            left: rem(10px)
+          +media("<=medium-768")
+            margin:
+              left: 0
+              right: rem(30px)
+          @extend %reset-list
+          .footer-info__sns--link
+            display: block
+            width: rem(30px)
+            height: rem(30px)
+            .footer-info__sns--img
+              opacity: 0.7
+              transition: opacity .2s ease-out
+              &:hover
+                opacity: 1
+                width: rem(32px)
+                height: rem(32px)

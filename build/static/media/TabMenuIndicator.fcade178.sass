@@ -1,0 +1,47 @@
+@import 'index'
+
+.main-collection__tab 
+  +relative
+  float: left
+  color: $color-777777
+  background: $white
+  border:
+    left: 1px solid $color-dddddd
+  @extend %reset-list
+  +media("<=medium-960")
+    box-sizing: border-box
+    width: 33.333%
+
+.main-collection__link
+  display: block
+  text-align: center
+  color: $color-777777
+  padding:
+    top: rem(21px)
+    left: rem(15px)
+    right: rem(15px)
+    bottom: rem(29px)
+  border:
+    top: 1px solid $color-dddddd
+    left: 1px solid $color-dddddd
+    right: 1px solid $color-dddddd
+    bottom: 1px solid $color-dddddd
+  &:nth-child(1)
+    border:
+      left: 0
+  &.main-collection__link--active
+    font-weight: 700
+    color: $omega-keycolor
+    border:
+      bottom: 1px solid $white
+  +media("<=large-1024")
+    padding:
+      top: rem(16px)
+      bottom: rem(20px)
+  +media("<=medium-960")
+    width: 100%
+    padding:
+      left: 0
+      right: 0
+  +media("<=small-376")
+    line-height: 1.2

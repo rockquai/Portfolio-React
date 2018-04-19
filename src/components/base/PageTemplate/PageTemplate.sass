@@ -1,0 +1,123 @@
+@import 'index'
+
+// grid
+.page-template
+  +media("<=huge-1920")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 1560px
+      height: 3958px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 120px, transparent 120px)
+        background-size: 1px 24px, 130px 1px
+  +media("<=huge-1366")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 1280px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 127px, transparent 127px)
+        background-size: 1px 24px, 128px 1px
+  +media("<=huge-1280")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 1020px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 75px, transparent 75px)
+        background-size: 1px 24px, 85px 1px
+  +media("<=large-1024")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 960px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 110px, transparent 110px)
+        background-size: 1px 24px, 120px 1px
+  +media("<=medium-960")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 780px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 120px, transparent 120px)
+        background-size: 1px 24px, 130px 1px
+  +media("<=medium-768")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 660px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 100px, transparent 100px)
+        background-size: 1px 24px, 110px 1px
+  +media("<=small-600") // 4컬럼
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 520px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 120px, transparent 120px)
+        background-size: 1px 24px, 130px 1px
+  +media("<=small-480")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 400px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 90px, transparent 90px)
+        background-size: 1px 24px, 100px 1px
+  +media("<=small-376")
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 300px
+      height: 3948px
+      transform: translate(-50%,-50%)
+      z-index: -1000
+    &.show-grid
+      &::before
+        background: linear-gradient(to bottom, transparent 23px, rgba(127, 108, 254, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 140px, transparent 140px)
+        background-size: 1px 24px, 150px 1px

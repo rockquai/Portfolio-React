@@ -1,0 +1,30 @@
+[
+  {
+    "images": "https://raw.githubusercontent.com/rockquai/assets/master/images/omega-watch-image-13.jpg",
+    "product": "SEAMASTER 1948 LIMITED EDITIONS",
+    "description": "Launched in 1948, the Seamaster line was OMEGA's first family of watches. A blend of battle-proven technology and beautiful design, they would go on to conquer the watchmaking world.",
+    "mediaType": "image",
+    "href": ""
+  },
+  {
+    "images": "https://raw.githubusercontent.com/rockquai/assets/master/images/omega-watch-image-10.jpg",
+    "product": "SPEEDMASTER PROFESSIONAL",
+    "description": "007 is back and dressed to kill. With a dial inspired by the Bond family coat of arms, and a gun barrel caseback, this sought-after timepiece celebrates the spy in deadly style.",
+    "mediaType": "image",
+    "href": ""
+  },
+  {
+    "images": "https://raw.githubusercontent.com/rockquai/assets/master/images/omega-watch-image-11.jpg",
+    "product": "THE SEAMASTER RAILMASTER",
+    "description": "For women with an intrepid spirit and a love of elegance, the Seamaster Aqua Terra is the perfect fit. Each model is beautifully designed for life on shore - or like Alessandra Ambrosio - for solo days on the ocean.",
+    "mediaType": "image",
+    "href": ""
+  },
+  {
+    "images": "https://raw.githubusercontent.com/rockquai/assets/master/images/omega-watch-image-12.jpg",
+    "product": "SEAMASTER AQUA TERRA 150M",
+    "description": "With a refined case size, the Speedmaster 38 mm collection includes vibrant colours and unique design attributes that provide a refreshing twist on a classic chronograph.",
+    "mediaType": "image",
+    "href": ""
+  }
+]
