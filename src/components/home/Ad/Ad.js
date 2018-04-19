@@ -21,7 +21,7 @@ const Ad = () => {
             <span className={cx('main-ad__info-title--top')}>ONE TO WATCH</span>
             <span className={cx('main-ad__info-title')}>Beauty in a Bell Jar</span>
             <span className={cx('main-ad__info-subtitle')}>
-              See our most feminine watches captured under glass.
+              See our most feminine watches captured under glass
             </span>
           </div>
         </a>
