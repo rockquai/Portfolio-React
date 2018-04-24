@@ -73,11 +73,11 @@ class GnbMenu extends Component {
       <Fragment>
         <nav className={cx('header-nav')}>
           <h2 className={cx('header-nav__title')}>omega menu</h2>
-          <a href="#!" className={cx('header-nav__link', 'header-nav__link--active')}>THE COLLECTION</a>
-          <a href="#!" className={cx('header-nav__link')}>PLANET OMEGA</a>
-          <a href="#!" className={cx('header-nav__link')}>HER TIME</a>
-          <a href="#!" className={cx('header-nav__link')}>STORE LOCATOR</a>
-          <a href="#!" className={cx('header-nav__link')}>CUSTOMER SERVICE</a>
+          <a href="/" target="_blank" className={cx('header-nav__link', 'header-nav__link--active')}>THE COLLECTION</a>
+          <a href="/" target="_blank" className={cx('header-nav__link')}>PLANET OMEGA</a>
+          <a href="/" target="_blank" className={cx('header-nav__link')}>HER TIME</a>
+          <a href="/" target="_blank" className={cx('header-nav__link')}>STORE LOCATOR</a>
+          <a href="/" target="_blank" className={cx('header-nav__link')}>CUSTOMER SERVICE</a>
         </nav>
 
         <nav className={cx('header-nav__rwd')} ref="navi">

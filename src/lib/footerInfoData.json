@@ -2,21 +2,21 @@
   {
     "id" : 1,
     "menu" : "TERMS OF UES",
-    "url" : "#"
+    "url" : "/"
   },
   {
     "id" : 2,
     "menu" : "PRIVACY POLICY",
-    "url" : "#"
+    "url" : "/"
   },
   {
     "id" : 3,
     "menu" : "NEWS",
-    "url" : "#"
+    "url" : "/"
   },
   {
     "id" : 4,
     "menu" : "FAQ",
-    "url" : "#"
+    "url" : "/"
   }
 ]

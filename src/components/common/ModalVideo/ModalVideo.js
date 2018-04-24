@@ -11,10 +11,10 @@ const ModalVideo = ({ onCloseButtonClick }) => {
   return (
     <div className={cx('modal__wrapper')}>
       <div
-        className={cx('modal__close')}
+        className={cx('modal__close--video')}
         onClick={onCloseButtonClick}>
         <img
-          className={cx('modal__button--close')}
+          className={cx('modal__button--video-close')}
           src={closeIcon} 
           alt="" />
       </div>

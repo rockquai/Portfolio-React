@@ -51,10 +51,11 @@ class Footer extends Component {
     return footerInfoData.map((info, index) => {
       return (
         <li className={cx('footer-info__menu--list')} key={index}>
-          <a 
+          <a
+            className={cx('footer-info__menu--link')} 
             key={index} 
             href={info.url}
-            className={cx('footer-info__menu--link')}>
+            target="_blank">
             {info.menu}
           </a>
         </li>
@@ -66,10 +67,11 @@ class Footer extends Component {
     return this.state.socialNetworkList.map((social, index) => {
       return (
         <li className={cx('footer-info__sns--list')} key={index}>
-          <a 
+          <a
+            className={cx('footer-info__sns--link')}
             key={index} 
             href={social.link}
-            className={cx('footer-info__sns--link')}>
+            target="_blank">
             <img
               className={cx('footer-info__sns--img')}
               src={social.src}

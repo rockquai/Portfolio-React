@@ -25,10 +25,10 @@ const ModalSearch = ({ onCloseButtonClick }) => {
       </form>
 
       <div
-        className={cx('modal__close')}
+        className={cx('modal__close--search')}
         onClick={onCloseButtonClick}>
         <img
-          className={cx('modal__button--close')}
+          className={cx('modal__button--search-close')}
           src={closeIcon} 
           alt="" />
       </div>

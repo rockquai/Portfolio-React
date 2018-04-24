@@ -1,4 +1,4 @@
-@import 'index'
+@import 'index.sass'
 
 .modal__wrapper
   +fixed (top 50% left 50%)
@@ -31,9 +31,11 @@
     width: rem(75px)
     height: rem(75px)
   
-  .modal__close
+  .modal__close--search
     cursor: pointer
     +absolute(top 50% left 50%)
     transform: translate(-50%, -50%)
-    .modal__button--close
-      width: 130%
+    .modal__button--search-close
+      width: rem(100px)
+      height: rem(100px)
+

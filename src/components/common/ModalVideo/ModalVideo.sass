@@ -1,21 +1,20 @@
-@import 'index'
+@import 'index.sass'
 
 .modal__wrapper
   +fixed (top 50% left 50%)
   transform: translate(-50%, -50%)
   width: rem(1280px)
   height: rem(400px)
-  background: #ededed
   z-index: 200
   +media("<=huge-1366")
     width: 90%
 
-
-  .modal__close
+  .modal__close--video
     cursor: pointer
-    +absolute(top rem(-56px) right rem(-12px))
-    .modal__button--close
-      width: 80%
+    +absolute(top rem(-56px) right 0)
+    .modal__button--video-close
+      width: rem(50px)
+      height: rem(50px)
 
   .main-video-wrapper
     width: 100%

@@ -212,7 +212,6 @@ module.exports = {
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
-          // SCSS
           {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract(
@@ -267,7 +266,6 @@ module.exports = {
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
-          // SASS
           {
             test: /\.sass$/,
             loader: ExtractTextPlugin.extract(
