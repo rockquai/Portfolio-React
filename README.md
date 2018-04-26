@@ -3,6 +3,8 @@
 - Markup
 - Sass
 - Design
+  - [Index](https://raw.githubusercontent.com/rockquai/Portfolio-React/master/design/omega-index.jpg)
+  - [ViewPage](https://raw.githubusercontent.com/rockquai/Portfolio-React/master/design/omega-view.jpg)
 
 ---
 
