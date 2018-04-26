@@ -1,4 +1,4 @@
-# [Portfolio React](https://rockquai.github.io/Portfolio-React/) 
+# [Portfolio React](https://rockquai.github.io/Portfolio-React/)
 - React
 - Markup
 - Sass
@@ -8,4 +8,8 @@
 
 ---
 
-#### [Front-End Developer Skill Blog](https://rockquai.github.io/)
+## [Portfolio Slides](https://rockquai.github.io/Portfolio-Slides)
+
+---
+
+## [Front-End Developer Skill Blog](https://rockquai.github.io/)
