@@ -24,12 +24,38 @@
       outline: none
     +media("<=huge-1366")
       width: 90%
-
+      +font-size(60px)
+    +media("<=medium-768")
+      width: 85%
+      +font-size(50px)
+    +media("<=small-600")
+      width: 80%
+      +font-size(40px)
+    +media("<=small-480")
+      width: 70%
+      +font-size(35px)
+    +media("<=small-376")
+      width: 60%
+      +font-size(30px)
+  
   .modal__button--search
     cursor: pointer
     +absolute(top rem(-9px) right rem(-7px))
     width: rem(75px)
     height: rem(75px)
+    +media("<=medium-768")
+      width: rem(60px)
+      height: rem(60px)
+    +media("<=small-600")
+      width: rem(45px)
+      height: rem(45px)
+    +media("<=small-480")
+      top: 0
+      width: rem(35px)
+      height: rem(35px)
+    +media("<=small-376")
+      width: rem(30px)
+      height: rem(30px)
   
   .modal__close--search
     cursor: pointer
@@ -38,4 +64,13 @@
     .modal__button--search-close
       width: rem(100px)
       height: rem(100px)
-
+      +media("<=medium-768")
+        width: rem(90px)
+        height: rem(90px)
+      +media("<=small-600")
+        width: rem(80px)
+        height: rem(80px)
+      +media("<=small-480")
+        width: rem(70px)
+        height: rem(70px)
+      +media("<=small-376")
