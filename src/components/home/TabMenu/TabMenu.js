@@ -27,6 +27,7 @@ class TabMenu extends Component {
 
     return (
       <article className={cx('main-collection')}>
+        <h2 className={(cx('main-collection__title'))}>omega watches collection</h2>
         <Responsive>
           <div className={cx('main-collection__tablist-wrapper')}>
             <ul className={cx('main-collection__tablist')}>

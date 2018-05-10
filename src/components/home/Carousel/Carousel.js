@@ -64,7 +64,7 @@ class Carousel extends Component {
 
     return (
       <article className={cx('main-carousel')}>
-        <h2 className={(cx('main-carousel__title'))}>mymusictaste MAKE</h2>
+        <h2 className={(cx('main-carousel__title'))}>omega watches</h2>
 
         <CarouselNavigator
           className={cx('space-navigator__wrapper')}

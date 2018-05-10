@@ -40,31 +40,34 @@
   +media("<=small-376")
     width: 100%
 
-.main-collection__tablist-wrapper
-  +absolute(top rem(-76px))
-  width: 100%
-  +media("<=large-1024")
-    top: rem(-62px)
-  +media("<=medium-960")
-    top: rem(-62px)
-  +media("<=medium-768")
-    top: rem(41px)
-  +media("<=small-480")
-    top: rem(24px)
-  .main-collection__tablist
+  .main-collection__title
+    @extend %a11y-hidden
+
+  .main-collection__tablist-wrapper
+    +absolute(top rem(-76px))
     width: 100%
-    @extend %clearfix
+    +media("<=large-1024")
+      top: rem(-62px)
     +media("<=medium-960")
-      &::before
-        width: 0
+      top: rem(-62px)
     +media("<=medium-768")
-      &::before
-        width: 0
-        height: 0
-        background: none
-.main-collection__contents-wrapper
-  +absolute(top 0 left 0)
-  width: 100%
-  height: rem(406px)
-  +media("<=medium-768")
-    top: rem(91px)
+      top: rem(41px)
+    +media("<=small-480")
+      top: rem(24px)
+    .main-collection__tablist
+      width: 100%
+      @extend %clearfix
+      +media("<=medium-960")
+        &::before
+          width: 0
+      +media("<=medium-768")
+        &::before
+          width: 0
+          height: 0
+          background: none
+  .main-collection__contents-wrapper
+    +absolute(top 0 left 0)
+    width: 100%
+    height: rem(406px)
+    +media("<=medium-768")
+      top: rem(91px)
