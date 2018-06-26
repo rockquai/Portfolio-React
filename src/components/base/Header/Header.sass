@@ -1,6 +1,6 @@
 @import 'styles/index.sass'
 
-.base.header
+.header-base
   &::after
     +absolute(top rem(91px))
     content: ''
@@ -19,6 +19,8 @@
       margin:
         top: rem(19px)
       text-align: center
+      width: rem(101px)
+      height: rem(51px)
       +media("<=large-1024")
         flex-grow: 12
         order: 1

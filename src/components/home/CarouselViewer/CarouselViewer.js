@@ -17,8 +17,7 @@ const CarouselViewer = ({ index, activeIndex, images, product, description, href
       <img 
         className={cx('viewer__image')}
         src={images} 
-        alt={product}
-        role="tabpanel"/>
+        alt={product} />
 
       <div className={cx('main-carousel__watch-info-wrapper')}>
         <p className={cx('main-carousel__watch-info--name')}>

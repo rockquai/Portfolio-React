@@ -1,7 +1,11 @@
 @import 'styles/index.sass'
 
-.common.responsive
+.common
+  & > .responsive
   width: rem(1280px)
+  padding:
+    left: rem(10px)
+    right: rem(10px)
   +media("<=huge-1920")
   +media("<=huge-1366")
   +media("<=huge-1280")

@@ -73,8 +73,8 @@ class Carousel extends Component {
           >
         </CarouselNavigator>
 
-        <div className={cx('main-carousel__tablist-wrapper')} role="tablist">
-            <ul className={cx('main-carousel__tablist')} role="presentation">
+        <div className={cx('main-carousel__tablist-wrapper')}>
+            <ul className={cx('main-carousel__tablist')}>
               {carouselSlidesData.map((slide, index) =>
                 <CarouselIndicator
                   key={index}
@@ -87,7 +87,7 @@ class Carousel extends Component {
             </ul>
         </div>
 
-        <div className={cx('main-carousel__tabpanel-wrapper')} role="group">
+        <div className={cx('main-carousel__tabpanel-wrapper')}>
           {carouselSlidesData.map((slide, index) =>
             <CarouselViewer
               key={index}

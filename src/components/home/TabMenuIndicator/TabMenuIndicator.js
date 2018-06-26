@@ -8,9 +8,7 @@ const TabMenuIndicator = ({ index, activeIndex, onClick, tabNavi }) => {
   return (
     <li 
       className={cx('main-collection__tab')}
-      role="tab"
-      aria-controls="section1"
-      aria-selected="true">
+    >
         <a
           href="#!"
           className={

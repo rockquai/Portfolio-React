@@ -80,8 +80,7 @@ class GnbMenu extends Component {
           <a href="/" target="_blank" className={cx('header-nav__link')}>CUSTOMER SERVICE</a>
         </nav>
 
-        <nav className={cx('header-nav__rwd')} ref="navi">
-          <h2 className={cx('header-nav__title')}>omega menu</h2>
+        <div className={cx('header-nav__rwd')} ref="navi">
           <div className={cx('header-nav__rwd--menu', menuStatus)} onClick={ menuToggle }>
             <span className={cx('header-nav__rwd--menu-bar')}></span>
             <span className={cx('header-nav__rwd--menu-bar')}></span>
@@ -94,7 +93,7 @@ class GnbMenu extends Component {
               { this.renderMenuList() }
             </ul>
           </div>
-        </nav>
+        </div>
       </Fragment>
     );
   }

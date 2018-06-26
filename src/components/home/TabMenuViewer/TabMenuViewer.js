@@ -11,13 +11,12 @@ const TabMenuViewer = ({ index, activeIndex, productTitle, description, images, 
         index === activeIndex
           ? cx('main-collection__content', 'main-collection__content--active')
           : cx('main-collection__content')}
-      role="tabpanel"
-      aria-labelledby="tab1">
+    >
 
-      <h3 className={cx('main-collection__contents__title')}>
+      <h4 className={cx('main-collection__contents__title')}>
         <strong className={cx('main-collection__contents__title--emphasis')}>{productTitle}</strong>
         <span className={cx('main-collection__contents__subtitle')}>{description}</span>
-      </h3>
+      </h4>
 
       <ul className={cx('main-collection__content--list-wrapper')}>
         <li className={cx('main-collection__content--list')}>
