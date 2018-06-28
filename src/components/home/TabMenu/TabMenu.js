@@ -27,8 +27,8 @@ class TabMenu extends Component {
 
     return (
       <article className={cx('main-collection')}>
-        <h3 className={(cx('main-collection__title'))}>omega watches collection</h3>
         <Responsive>
+          <h3 className={(cx('main-collection__title'))}>omega watches collection</h3>
           <div className={cx('main-collection__tablist-wrapper')}>
             <ul className={cx('main-collection__tablist')}>
               {tabMenuData.map((slide, index) =>

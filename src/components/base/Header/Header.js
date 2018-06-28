@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 
 const Header = () => {
   return (
-    <header className={cx('header-base')}>
+    <header className={cx('header__full')}>
       <Responsive className={cx('header-wrapper')}>
         <h1 className={cx('header-logo')}>
           <a href="#!">

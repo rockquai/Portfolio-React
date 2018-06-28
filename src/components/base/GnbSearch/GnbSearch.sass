@@ -1,7 +1,6 @@
 @import 'styles/index.sass'
 
 .header-search
-  flex-grow: 1
   margin:
     top: rem(45px)
   +media("<=large-1024")
@@ -12,3 +11,6 @@
   .header-search__img
     width: rem(24px)
     height: rem(24px)
+    +media("<=large-1024")
+      width: rem(28px)
+      height: rem(28px)

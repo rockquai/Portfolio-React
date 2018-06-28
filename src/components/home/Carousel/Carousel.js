@@ -67,10 +67,9 @@ class Carousel extends Component {
         <h2 className={(cx('main-carousel__title'))}>omega watches</h2>
 
         <CarouselNavigator
-          className={cx('space-navigator__wrapper')}
           onPrev={goToPrevSlide}
           onNext={goToNextSlide}
-          >
+        >
         </CarouselNavigator>
 
         <div className={cx('main-carousel__tablist-wrapper')}>

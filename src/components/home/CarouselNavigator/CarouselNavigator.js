@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// import Responsive from 'components/common/Responsive';
 import styles from './CarouselNavigator.sass';
 import classNames from 'classnames/bind';
 

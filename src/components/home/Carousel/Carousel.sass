@@ -6,12 +6,6 @@
   margin:
     left: auto
     right: auto
-  +media("<=huge-1366")
-    width: 100%
-  +media("<=huge-1280")
-    width: 100%
-  +media("<=large-1024")
-    width: 100%
   .main-carousel__title
     @extend %a11y-hidden
 
@@ -22,14 +16,5 @@
     z-index: 100
     +media("<=large-1024")
       display: none
-    +media("<=medium-960")
-      display: none
-    +media("<=medium-768")
-      display: none
-    +media("<=small-376")
-      display: none
     .main-carousel__tablist
-      // display: grid
-      // grid-template-columns: 1fr 1fr 1fr 1fr
       display: flex
-      @extend %clearfix

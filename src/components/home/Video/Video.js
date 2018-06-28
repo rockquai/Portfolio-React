@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
+// import Responsive from 'components/common/Responsive';
 import ModalVideo from 'components/common/ModalVideo';
 import Dimmed from 'components/common/Dimmed';
 

@@ -2,15 +2,13 @@
 
 .main-collection__tab 
   +relative
-  float: left
   color: $color-777777
   background: $white
   border:
     left: 1px solid $color-dddddd
   @extend %reset-list
   +media("<=medium-960")
-    box-sizing: border-box
-    width: 33.333%
+    flex-grow: 1
 
 .main-collection__link
   display: block

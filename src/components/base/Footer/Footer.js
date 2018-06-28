@@ -19,29 +19,21 @@ class Footer extends Component {
       {
         link: '/',
         src: instagram,
-        width: '30',
-        height: '30',
         text: 'instagram'
       },
       {
         link: '/',
         src: facebook,
-        width: '30',
-        height: '30',
         text: 'Facebook'
       },
       {
         link: '/',
         src: twitter,
-        width: '30',
-        height: '30',
         text: 'twitter'
       },
       {
         link: '/',
         src: youtube,
-        width: '30',
-        height: '30',
         text: 'Youtbue'
       } 
     ]
@@ -75,8 +67,6 @@ class Footer extends Component {
             <img
               className={cx('footer-info__sns--img')}
               src={social.src}
-              width={social.width}
-              height={social.height}
               alt={social.text} />
           </a>
         </li>

@@ -11,25 +11,6 @@
     +font-size(24px)
     color: $color-777777
     text-align: center
-    +media("<=huge-1366")
-      margin:
-        top: rem(56px)
-    +media("<=huge-1280")
-      margin:
-        top: rem(32px)
-      +font-size(22px)
-    +media("<=large-1024")
-      margin:
-        top: rem(29px)
-    +media("<=medium-768")
-      margin:
-        top: rem(40px)
-    +media("<=small-600")
-      margin:
-        top: rem(60px)
-    +media("<=small-376")
-      margin:
-        top: rem(80px)
   .main-collection__contents__title--emphasis
     color: $omega-keycolor
   .main-collection__contents__subtitle
@@ -49,9 +30,10 @@
         right: rem(10px)
   .main-collection__content--list-wrapper
     display: flex
-    @extend %clearfix
     margin:
       top: rem(26x)
+    &::after
+      @extend %clearfix
     +media("<=huge-1280")
       margin:
         top: rem(38px)
@@ -60,6 +42,7 @@
 
     .main-collection__content--list
       flex-grow: 1
+      width: 20%
       +relative
       @extend %reset-list
       &::after 
@@ -83,29 +66,23 @@
 
       .main-collection__content--link
         display: block
+        +font-size(16px)
+        color: $color-777777
+
         .main-collection__content--img
           width: 100%
           height: 100%
           +media("<=medium-768")
             width: 80%
             height: 80%
-
         .main-collection__content--product-name
           overflow: hidden
-          height: rem(30px)
-          +font-size(16px)
-          line-height: 2
-          color: $color-777777
+          min-width: 0
+          text-overflow: ellipsis
+          white-space: nowrap
           text-align: center
-          +media("<=medium-960")
-            +font-size(14px)
-          +media("<=small-480")
-            +font-size(16px)
+          padding:
+            left: rem(10px)
+            right: rem(10px)
 
-      .main-collection__content--list:first-child
-      margin:
-        left: 0
-      &::before
-        width: 0
-        height: 0
-        background: $white
+

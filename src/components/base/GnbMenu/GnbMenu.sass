@@ -1,17 +1,19 @@
 @import 'styles/index.sass'
 
 .header-nav
-  flex-grow: 6
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: rem(800px)
   margin:
-    left: rem(200px)
     top: rem(46px)
+    left: rem(120px)
+  +font-size(16px)
   .header-nav__title
     @extend %a11y-hidden
   .header-nav__link
-    display: inline-block
-    margin:
-      right: rem(50px)
-    +font-size(16px)
+    flex-grow: 1
+    text-align: center
     color: $color-929292
     +media("<=huge-1280")
       margin:
@@ -80,7 +82,6 @@
     width: 100%
     background-color: $white
     transform: translateY(-150%)
-    // transform: translateY(0%)
     transition: transform 500ms
     z-index: 1002
     .header-nav__rwd--menu-list
@@ -101,8 +102,5 @@
           color: $color-929292
           &:hover
             color: $omega-keycolor
-      .header-nav__rwd--menu-list--item:last-child
-        // border-bottom: none
-
     &.isopen
       transform: none

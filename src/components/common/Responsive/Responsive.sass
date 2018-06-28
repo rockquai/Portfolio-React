@@ -2,12 +2,14 @@
 
 .common
   & > .responsive
+  box-sizing: border-box
   width: rem(1280px)
+  margin:
+    left: auto
+    right: auto
   padding:
     left: rem(10px)
     right: rem(10px)
-  +media("<=huge-1920")
-  +media("<=huge-1366")
   +media("<=huge-1280")
     width: rem(1020px)
   +media("<=large-1024")
@@ -17,6 +19,8 @@
   +media("<=medium-768")
     width: rem(660px)
   +media("<=small-600")
-    width: 100%
+    width: rem(520px)
   +media("<=small-480")
+    width: rem(400px)
   +media("<=small-376")
+    width: rem(300px)

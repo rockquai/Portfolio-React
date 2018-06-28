@@ -5,7 +5,7 @@
     @extend %reset-button
     cursor: pointer
     opacity: 0.6
-    +absolute(top 40%)
+    +absolute(top 50%)
     width: rem(30px)
     height: rem(54px)
     transform: translateY(-50%)
@@ -41,7 +41,7 @@
     @extend %a11y-hidden
     
   .main-carousel__button--prev
-    left: rem(30px)
+    left: rem(50px)
     &::before
       top: 10px
       left: 10px
@@ -60,7 +60,7 @@
         left: 0
 
   .main-carousel__button--next
-    right: rem(30px)
+    right: rem(50px)
     &::before
       top: 10px
       right: 10px
@@ -77,6 +77,9 @@
     +media("<=small-376")
       &::before
         right: 0
+
+
+
 
 
 

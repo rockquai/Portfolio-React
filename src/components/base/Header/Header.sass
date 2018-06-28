@@ -1,31 +1,29 @@
 @import 'styles/index.sass'
 
-.header-base
+.header__full
+  +relative
+  height: rem(96px)
   &::after
-    +absolute(top rem(91px))
+    +absolute(top rem(96px) left 0)
     content: ''
     width: 100%
     height: rem(2px)
     background: $color-dddddd
   .header-wrapper
     display: flex
-    flex-wrap: wrap
-    height: rem(92px)
-    margin:
-      left: auto
-      right: auto
+    justify-content: space-between
     .header-logo
-      flex-grow: 1
       margin:
         top: rem(19px)
       text-align: center
       width: rem(101px)
       height: rem(51px)
       +media("<=large-1024")
-        flex-grow: 12
         order: 1
         margin:
           top: rem(21px)
       .header-logo__img
         width: rem(101px)
         height: rem(51px)
+        +media("<=medium-960")
+          width: 90%
