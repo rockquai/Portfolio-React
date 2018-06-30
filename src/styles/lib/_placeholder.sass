@@ -1,12 +1,10 @@
-//@_common.sass
-	
-// clearfix 
+// float clearing
 %clearfix
 	content: ''
 	display: block
 	clear: both
 
-// clearfix - Micro : 오페라 버그 해결
+// float clearing - Micro : 오페라 버그 해결
 %micro-clearfix
 	&:before,
 	&:after
@@ -21,7 +19,7 @@
 	display: block
 	text-indent: -99999em
 
-// Accessibility-hidden모듈
+// Accessibility-hidden
 %a11y-hidden
 	position: absolute
 	overflow: hidden
@@ -66,3 +64,38 @@
   outline-offset: 10px
   box-shadow: 0 0 0 4px rgba(#5aceff, 0.45)
   border-radius: 2px
+
+%reset-body
+	margin: 0
+
+%reset-box-model
+	margin: 0
+	border: 0
+	padding: 0
+
+%reset-outline
+	outline: none
+
+%reset-a-link
+	color: #1D1A1C
+	text-decoration: none
+
+%reset-a-img
+	border: none
+
+%reset-table
+	margin: 0
+	border-collapse: collapse
+	border-spacing: 0
+	caption
+		@extend %a11y-hidden
+	th
+		align: letf
+
+%reset-list
+	margin:
+		top: 0
+		bottom: 0
+	
+	padding-left: 0
+	list-style: none

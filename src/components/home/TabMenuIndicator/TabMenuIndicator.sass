@@ -1,4 +1,4 @@
-@import 'index.sass'
+@import 'utils'
 
 .main-collection__tab 
   +relative
@@ -6,6 +6,12 @@
   background: $white
   border:
     left: 1px solid $color-dddddd
+  &:first-child
+    border:
+      left: 2px solid $color-dddddd
+  &:last-child
+    border:
+      right: 2px solid $color-dddddd
   @extend %reset-list
   +media("<=medium-960")
     flex-grow: 1
@@ -20,11 +26,11 @@
     right: rem(15px)
     bottom: rem(29px)
   border:
-    top: 1px solid $color-dddddd
+    top: 2px solid $color-dddddd
     left: 1px solid $color-dddddd
     right: 1px solid $color-dddddd
-    bottom: 1px solid $color-dddddd
-  &:nth-child(1)
+    bottom: 2px solid $color-dddddd
+  &:first-child
     border:
       left: 0
   &.main-collection__link--active
@@ -32,7 +38,7 @@
     color: $omega-keycolor
     border:
       bottom: 1px solid $white
-  +media("<=large-1024")
+  +media("<=huge-1280")
     padding:
       top: rem(16px)
       bottom: rem(20px)

@@ -1,25 +1,19 @@
-@import 'index.sass'
+@import 'utils'
 
 .main-collection
+  +relative
   margin:
-    top: rem(-76px)
-  +media("<=large-1024")
+    top: rem(-78px)
+  +media("<=huge-1280")
     margin:
-      top: rem(-62px)
+      top: rem(-64px)
   +media("<=medium-768")
     margin:
       top: rem(40px)
+    
   .main-collection__title
     @extend %a11y-hidden
 
   .main-collection__tablist-wrapper
     .main-collection__tablist
       display: flex
-      +media("<=medium-960")
-        &::before
-          width: 0
-      +media("<=medium-768")
-        &::before
-          width: 0
-          height: 0
-          background: none

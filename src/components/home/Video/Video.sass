@@ -1,16 +1,15 @@
-@import 'index.sass'
+@import 'utils'
 
 .main-video
+  width: rem(1560px)
   margin:
     top: rem(57px)
     left: auto
     right: auto
   +media("<=huge-1366")
-    width: rem(1280px)
+
   +media("<=huge-1280")
     width: rem(1020px)
-    margin:
-      bottom: rem(40px)
   +media("<=large-1024")
     width: rem(1000px)
   +media("<=medium-960")
@@ -32,17 +31,21 @@
       left: auto
       right: auto
     .main-video__img
-      max-width: 100%
+      width: 100%
+      border:
+        bottom: 2px solid $color-dddddd
+      +media("<=medium-768")
+        border: 0
     .main-video__youtue-icon
       +absolute(top 50% left 50%)
       transform: translate(-50%, -50%)
       width: 5%
       +media("<=large-1024")
         width: 6%
-      +media("<=medium-960")
-        width: 10%
+      +media("<=medium-768")
+        width: 8%
       +media("<=small-600")
-        width: 12%
+        width: 9%
 
   .main-video__title
     @extend %a11y-hidden
