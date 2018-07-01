@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import Responsive from 'components/common/Responsive';
 import adImgage from "static/images/omega-watch-ad01.jpg";
 
 import styles from './Ad.sass';

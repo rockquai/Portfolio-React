@@ -10,7 +10,7 @@
       top: rem(45px)
     +font-size(24px)
     color: $color-777777
-    text-align: center
+    text-align: center  
   .main-collection__contents__title--emphasis
     color: $omega-keycolor
   .main-collection__contents__subtitle
@@ -30,34 +30,35 @@
         right: rem(10px)
   .main-collection__content--list-wrapper
     display: flex
+    flex-wrap: wrap
     margin:
       top: rem(26x)
-    &::after
-      @extend %clearfix
     +media("<=huge-1280")
       margin:
         top: rem(38px)
-    +media("<=medium-768")
-      display: block
-
     .main-collection__content--list
-      flex-grow: 1
-      width: 20%
+      width: 25%
       +relative
       @extend %reset-list
       &::after 
         +absolute(top rem(30px) left rem(-10px))
         content: ''
         width: rem(1px)
-        height: 80%
+        height: 70%
         background: $color-d4d4d4
+      +media("<=small-376")
+        &::after
+          top: rem(10px)
+          left: 0
       &:nth-child(1)
         &::after
           width: 0
       +media("<=medium-768")
-        flex-grow: 0
-        float: left
         width: 50%
+        &:nth-child(1),
+        &:nth-child(2)
+          margin:
+            bottom: rem(30px)
         &:nth-child(3)
           &::after
             width: 0
@@ -68,6 +69,10 @@
         display: block
         +font-size(16px)
         color: $color-777777
+        +media("<=medium-768")
+          +font-size(15px)
+        +media("<=small-376")
+          +font-size(14px)
 
         .main-collection__content--img
           width: 100%
@@ -75,6 +80,11 @@
           +media("<=medium-768")
             width: 80%
             height: 80%
+            padding:
+              left: rem(20px)
+          +media("<=small-480")
+            padding:
+              left: rem(10px)
         .main-collection__content--product-name
           overflow: hidden
           min-width: 0
@@ -84,5 +94,22 @@
           padding:
             left: rem(10px)
             right: rem(10px)
-
+          margin:
+            top: rem(10px)
+          +media("<=large-1024")
+            padding:
+              left: rem(20px)
+              right: rem(20px)
+          +media("<=medium-960")
+            padding:
+              left: 0
+              right: 0
+            margin:
+              left: rem(-10px)
+          +media("<=small-480")
+            padding:
+              left: rem(10px)
+              right: rem(10px)
+            margin:
+              left: 0
 

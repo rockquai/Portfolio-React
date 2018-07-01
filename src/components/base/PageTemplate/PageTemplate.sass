@@ -2,33 +2,33 @@
 
 // grid
 .page-template
-  +media("<=huge-1920")
-    &::before
-      content: ""
-      position: absolute
-      top: 50%
-      left: 50%
-      width: 1560px
-      height: 3958px
-      transform: translate(-50%,-50%)
-      z-index: -1000
-    &.show-grid
-      &::before
-        background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 120px, transparent 120px)
-        background-size: 1px 24px, 130px 1px
-  +media("<=huge-1366")
-    &::before
-      content: ""
-      position: absolute
-      top: 50%
-      left: 50%
-      width: 1280px
-      transform: translate(-50%,-50%)
-      z-index: -1000
-    &.show-grid
-      &::before
-        background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 127px, transparent 127px)
-        background-size: 1px 24px, 128px 1px
+  // +media("<=huge-1920")
+  //   &::before
+  //     content: ""
+  //     position: absolute
+  //     top: 50%
+  //     left: 50%
+  //     width: 1560px
+  //     height: 3958px
+  //     transform: translate(-50%,-50%)
+  //     z-index: -1000
+  //   &.show-grid
+  //     &::before
+  //       background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 120px, transparent 120px)
+  //       background-size: 1px 24px, 130px 1px
+  // +media("<=huge-1366")
+  //   &::before
+  //     content: ""
+  //     position: absolute
+  //     top: 50%
+  //     left: 50%
+  //     width: 1280px
+  //     transform: translate(-50%,-50%)
+  //     z-index: -1000
+  //   &.show-grid
+  //     &::before
+  //       background: linear-gradient(to bottom, transparent 23px, hsla(173, 34%, 55%, 0.7) 23px), linear-gradient(to right, transparent 10px, hsla(345, 100%, 74%, 0.15) 10px, hsla(345, 100%, 74%, 0.15) 127px, transparent 127px)
+  //       background-size: 1px 24px, 128px 1px
   +media("<=huge-1280")
     &::before
       content: ""

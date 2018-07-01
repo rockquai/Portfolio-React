@@ -52,13 +52,11 @@
       opacity: 1
       transform: rotate(0deg)
       transition: 0.25s ease-in-out
-    .header-nav__rwd--menu-bar:nth-child(1)
-      top: 0
-    .header-nav__rwd--menu-bar:nth-child(2),
-    .header-nav__rwd--menu-bar:nth-child(3)
-      top: 10px
-    .header-nav__rwd--menu-bar:nth-child(4)
-      top: 20px
+      &:nth-child(2),
+      &:nth-child(3)
+        top: 10px
+      &:nth-child(4)
+        top: 20px
     &.isopen
       .header-nav__rwd--menu-bar:nth-child(1)
         top: 18px
